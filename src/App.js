@@ -8,7 +8,7 @@ function App() {
   const [error, setError] = useState(null);
 
   const writeLog = (message) => {
-    console.log(`${DateTime.now().toISO()}: ${message}`);
+    console.log("CompletionTIme",`${DateTime.now().toISO()}: ${message}`);
   };
 
   const sendNotificationAndUpdateDocuments = async (alertTableId, alertStatusID) => {
