@@ -60,7 +60,7 @@ function App() {
               if (relatedDoc.exists()) {
                 const relatedData = relatedDoc.data();
 
-                if (relatedData.Status === 'Pending' && returnDate && currentTime > returnDate) {
+                if (relatedData.Status === 'Pending') {
                   await sendNotificationAndUpdateDocuments(i.id, relatedDoc.id);
                 }
               } else {
